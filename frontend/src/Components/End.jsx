@@ -17,7 +17,7 @@ export const End = () => {
   let content;
 
   if (requestStatus === "loading" || requestStatus === "idle") {
-    content = <p>Hmm, I'm thinking...</p>;
+    content = <p>Hmm, I'm thinking... {answers.name}</p>;
   } else if (requestStatus === "succeeded") {
     content = <>
       <p>Because you chose {answers.questionOne}, {answers.questionTwo}, and the {answers.questionThree}, I think you should go on an adventure with:</p>
